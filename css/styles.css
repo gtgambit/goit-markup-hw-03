@@ -1,0 +1,222 @@
+/* primary color #212121 */
+/* secondary color #757575 */
+/* active color #2196F3 */
+/* active second color #FFFFFF */
+/* --footer-bg-color: #2F303A; */
+
+:root {
+  --text-color-primary: #212121;
+  --text-color-secondary: #757575;
+  --text-color-accent: #2196f3;
+  --logo-color-secondary: black;
+  --footer-color-text-primary: rgba(255, 255, 255, 0.6);
+  --footer-color-text-secondary: #ffffff;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--text-color-primary);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* ----------------Header---------------- */
+
+.logo {
+  text-decoration: none;
+  color: var(--text-color-accent);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-part {
+  color: var(--logo-color-secondary);
+}
+
+.nav-item,
+.contacts-item {
+  list-style: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.bsmt-item:hover,
+.bsmt-item:focus {
+  color: var(--text-color-accent);
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+.nav-link.active {
+  color: var(--text-color-accent);
+}
+.contacts-link {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+}
+
+/* ---------main--------- */
+
+.hero {
+  background-color: var(--footer-bg-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--footer-color-text-secondary);
+}
+
+.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  background-color: var(--text-color-accent);
+  color: var(--footer-color-text-secondary);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
+/* --- section about  ---- */
+
+.about {
+  list-style-type: none;
+}
+.about-title {
+  line-height: 1.14;
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.about-text {
+  line-height: 1.71;
+  color: var(--text-color-secondary);
+}
+/* section about work */
+.wedo-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.wedo-item {
+  list-style-type: none;
+}
+
+/* section team */
+
+.team-card {
+  list-style-type: none;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--text-color-secondary);
+}
+
+/* ----------------footer-------------------- */
+.basement {
+  background-color: var(--footer-bg-color);
+}
+
+.logo-bsmt {
+  text-decoration: none;
+  color: var(--text-color-accent);
+
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-bsmt-part {
+  color: var(--footer-color-text-secondary);
+}
+
+.bsmt-list {
+  list-style: none;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.adds {
+  color: var(--footer-color-text-secondary);
+  text-decoration: none;
+}
+
+.bsmt-item {
+  text-decoration: none;
+  color: var(--footer-color-text-primary);
+}
+
+/* -------------------portfolio page------------------------ */
+
+.btn-item {
+  list-style: none;
+}
+
+.btn-text:hover,
+.btn-text:focus {
+  color: var(--footer-color-text-secondary);
+  background-color: var(--text-color-accent);
+}
+.btn-text {
+  background-color: #f5f4fa;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  cursor: pointer;
+}
+
+.gallery-item {
+  list-style: none;
+}
+
+.gallery-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-color-secondary);
+}
