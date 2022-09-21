@@ -58,10 +58,12 @@ p {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
 }
+
 .logo {
   text-decoration: none;
   color: var(--text-color-accent);
@@ -70,7 +72,6 @@ p {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  display: flex;
 }
 
 .logo-part {
@@ -79,16 +80,15 @@ p {
 
 .header-ul {
   display: flex;
-  align-items: center;
-  margin-left: 93px;
+  padding-left: 98px;
 }
 .contacts {
   display: flex;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 32px;
   padding-bottom: 32px;
+  padding-top: 32px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: auto;
 }
 
 .nav-item,
@@ -98,9 +98,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-right: 50px;
-}
-.contacts li:nth-child(2) {
-  margin-left: 50px;
 }
 
 .nav-link:hover,
@@ -168,10 +165,11 @@ p {
 /* --- section about  ---- */
 .second-section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 .about {
   padding-bottom: 0;
+  padding-left: 0px;
+  padding-left: 0px;
   gap: 30px;
   display: flex;
   list-style: none;
@@ -201,6 +199,7 @@ p {
 .wedo-list {
   display: flex;
   gap: 30px;
+  padding-left: 0px;
 }
 
 .wedo-title,
@@ -224,6 +223,7 @@ p {
 }
 .team-list {
   display: flex;
+  padding-left: 0px;
   gap: 30px;
 
   text-align: center;
@@ -301,6 +301,11 @@ p {
   text-decoration: none;
 }
 
+.adds:hover,
+.adds:focus {
+  color: var(--text-color-accent);
+}
+
 .bsmt-item {
   text-decoration: none;
   margin-top: 9px;
@@ -315,6 +320,7 @@ p {
   gap: 8px;
   margin-bottom: 50px;
   list-style: none;
+  padding-left: 0px;
 }
 
 .btn-item {
