@@ -13,22 +13,19 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
     <header class="page-header">
-      <div class="container">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-part">Studio</span></a
-          >
-          <ul class="header-ul">
+      <div class="container navigation">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-part">Studio</span></a
+        >
+        <nav class="page-nav">
+          <ul class="nav-list">
             <li class="nav-item">
               <a href="./index.html" class="nav-link">Студія</a>
             </li>
@@ -36,34 +33,38 @@
               <a href="./portfolio.html" class="nav-link active">Портфоліо</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link">Контакти</a>
-            </li>
-          </ul>
-          <ul class="contacts">
-            <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="contacts-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a href="tel:++380961111111" class="contacts-link"
-                >+38 096 111 11 11</a
-              >
+              <a href="./index.html" class="nav-link">Контакти</a>
             </li>
           </ul>
         </nav>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a href="tel:++380961111111" class="contacts-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="gallery">
         <div class="container">
           <h1 style="display: none">Buttons</h1>
           <ul class="btn-list">
-            <li><button class="btn-item" type="button">Усі</button></li>
-            <li><button class="btn-item" type="button">Веб-сайти</button></li>
-            <li><button class="btn-item" type="button">Додатки</button></li>
-            <li><button class="btn-item" type="button">Дизайн</button></li>
-            <li><button class="btn-item" type="button">Маркетинг</button></li>
+            <li class="btn-item"><button class="btn-text">Усі</button></li>
+            <li class="btn-item">
+              <button class="btn-text">Веб-сайти</button>
+            </li>
+            <li class="btn-item"><button class="btn-text">Додатки</button></li>
+            <li class="btn-item"><button class="btn-text">Дизайн</button></li>
+            <li class="btn-item">
+              <button class="btn-text">Маркетинг</button>
+            </li>
           </ul>
           <ul class="gallery-list">
             <li class="gallery-item">
@@ -71,9 +72,8 @@
                 src="./images/portfolio/01.jpg"
                 alt="Технокряк"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Технокряк</h2>
                 <p class="gallery-text">Веб-сайт</p>
               </div>
@@ -83,9 +83,8 @@
                 src="./images/portfolio/02.jpg"
                 alt="Постер New Orlean vs Golden Star"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
                 <p class="gallery-text">Дизайн</p>
               </div>
@@ -95,9 +94,8 @@
                 src="./images/portfolio/03.jpg"
                 alt="Ресторан Seafood"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Ресторан Seafood</h2>
                 <p class="gallery-text">Додаток</p>
               </div>
@@ -107,9 +105,8 @@
                 src="./images/portfolio/04.jpg"
                 alt="Проєкт Prime"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Проєкт Prime</h2>
                 <p class="gallery-text">Маркетинг</p>
               </div>
@@ -119,9 +116,8 @@
                 src="./images/portfolio/05.jpg"
                 alt="Проєкт Boxes"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Проєкт Boxes</h2>
                 <p class="gallery-text">Додаток</p>
               </div>
@@ -131,9 +127,8 @@
                 src="./images/portfolio/06.jpg"
                 alt="Inspiration has no Borders"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Inspiration has no Borders</h2>
                 <p class="gallery-text">Веб-сайт</p>
               </div>
@@ -143,9 +138,8 @@
                 src="./images/portfolio/07.jpg"
                 alt="Видання Limited Edition"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Видання Limited Edition</h2>
                 <p class="gallery-text">Дизайн</p>
               </div>
@@ -155,9 +149,8 @@
                 src="./images/portfolio/08.jpg"
                 alt="Проєкт LAB"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Проєкт LAB</h2>
                 <p class="gallery-text">Маркетинг</p>
               </div>
@@ -167,9 +160,8 @@
                 src="./images/portfolio/09.jpg"
                 alt="Growing Business"
                 width="370"
-                class="galery-img"
               />
-              <div class="gallery-description">
+              <div class="gallery-info-wrapper">
                 <h2 class="gallery-title">Growing Business</h2>
                 <p class="gallery-text">Додаток</p>
               </div>
@@ -183,9 +175,9 @@
         <a href="./index.html" class="logo-bsmt"
           >Web<span class="logo-bsmt-part">Studio</span></a
         >
-        <address>
-          <ul class="bsm-info">
-            <li class="bsmt-list">
+        <address class>
+          <ul class="bsmt-list">
+            <li class="bsmt-item">
               <a
                 href="https://goo.gl/maps/SLytjCsaKBYsRHtB6"
                 target="_blank"
@@ -193,14 +185,14 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li class="bsmt-list">
-              <a href="mailto:info@devstudio.com" class="bsmt-item"
-                >info@example.com</a
-              >
-            </li>
-            <li class="bsmt-list">
+            <li class="bsmt-item">
               <a href="tel:+380961111111" class="bsmt-item"
                 >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="bsmt-item">
+              <a href="mailto:info@devstudio.com" class="bsmt-item"
+                >info@devstudio.com</a
               >
             </li>
           </ul>
