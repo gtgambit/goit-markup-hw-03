@@ -313,6 +313,7 @@ body {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  gap: 8px;
 }
 
 .btn-item {
@@ -326,7 +327,6 @@ body {
 }
 .btn-text {
   background-color: #f5f4fa;
-  margin-left: 8px;
   border: 0px;
   border-radius: 4px;
   text-align: center;
@@ -364,6 +364,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .gallery-text {
